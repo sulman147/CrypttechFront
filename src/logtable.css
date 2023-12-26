@@ -1,0 +1,58 @@
+.log-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.log-controls button {
+  margin-right: 10px;
+}
+
+.log-controls input {
+  max-width: 300px;
+}
+
+.table {
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Alternating row colors */
+.table-row:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+.table-row:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Styled table headers */
+.table-header {
+  background-color: #1976d2;
+  color: white !important;
+}
+
+.table-header-cell {
+  font-weight: bold !important;
+  color: white !important;
+}
+
+/* Clear and distinct borders for cells */
+.table-cell {
+  border: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+  .table-cell {
+    min-width: 80px; /* Adjust cell width for small screens */
+  }
+  .log-controls input {
+    max-width: 100%; /* Full width for search input on small screens */
+  }
+}
